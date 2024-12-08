@@ -357,248 +357,217 @@
       </li>
     </ul>
 
-    <h3 id="2.3-developer-experience">2.3. Developer experience</h3>
+    <h3 id="2.3-developer-experience">2.3. Опыт разработчика</h3>
     <p>
-      Improving the developer experience creates a more maintainable and
-      collaborative codebase.
+      Улучшение опыта разработчика создает более поддерживаемую и совместную кодовую базу.
     </p>
 
-    <h4 id="name-things-meaningfully">Name things</h4>
+    <h4 id="name-things-meaningfully">Давайте понятные имена</h4>
     <p>
-      Get the nouns and verbs right. Great names capture what something is or
-      does and create a clear, intuitive model. They show you understand the
-      domain. Take time to find good names, where nouns and verbs fit
-      together, making the whole greater than the sum of its parts.
+      Правильно подбирайте существительные и глаголы. Хорошие названия передают, что представляет собой объект или что
+      он делает, создавая понятную и интуитивную модель. Это показывает понимание предметной области. Уделяйте время
+      поиску хороших названий, где существительные и глаголы сочетаются, делая целое больше суммы его частей.
     </p>
 
     <ul>
       <li id="clear-and-consistent-naming">
         <p>
-          <strong>Clear and consistent naming</strong>: Use descriptive and
-          meaningful names for variables, functions, and files. Good naming
-          improves code readability and helps others understand each
-          component's purpose. Stick to a consistent style, like
-          <code>snake_case</code>, throughout the codebase.
+          <strong>Ясные и последовательные названия</strong>: Используйте описательные и значимые названия для
+          переменных, функций и файлов. Хорошие названия улучшают читаемость кода и помогают другим понять назначение
+          каждой компоненты. Соблюдайте единый стиль, например, <code>snake_case</code>, по всей кодовой базе.
         </p>
       </li>
 
       <li id="avoid-abbreviations">
         <p>
-          <strong>Avoid abbreviations</strong>: Use full words in names unless
-          the abbreviation is widely accepted and clear (e.g.,
-          <code>ID</code>, <code>URL</code>). Abbreviations can be confusing
-          and make it harder for others, especially new contributors, to
-          understand the code.
+          <strong>Избегайте сокращений</strong>: Используйте полные слова в названиях, если только сокращение не
+          является широко распространенным и понятным (например, <code>ID</code>, <code>URL</code>). Сокращения могут
+          сбивать с толку и затруднять понимание кода, особенно для новых участников.
         </p>
       </li>
 
       <li id="include-units-or-qualifiers-in-names">
         <p>
-          <strong>Include units or qualifiers in names</strong>: Append units
-          or qualifiers to variable names, placing them in descending order of
-          significance (e.g., <code>latency_ms_max</code> instead of
-          <code>max_latency_ms</code>). This clears up meaning, avoids
-          confusion, and ensures related variables, like
-          <code>latency_ms_min</code>, line up logically and group together.
+          <strong>Добавляйте единицы измерения или уточняющие слова в названия</strong>: Дополняйте переменные единицами
+          измерения или уточнениями, располагая их в порядке убывания значимости (например, <code>latency_ms_max</code>
+          вместо <code>max_latency_ms</code>). Это устраняет неясность, предотвращает путаницу и помогает логично
+          группировать связанные переменные, такие как <code>latency_ms_min</code>.
         </p>
       </li>
 
       <li id="document-the-why">
         <p>
-          <strong>Document the 'why'</strong>: Use comments to explain why
-          decisions were made, not just what the code does. Knowing the intent
-          helps others maintain and extend the code properly. Give context for
-          complex algorithms, unusual approaches, or key constraints.
+          <strong>Документируйте "почему"</strong>: Используйте комментарии, чтобы объяснить, почему были приняты
+          определенные решения, а не только что делает код. Понимание намерений помогает другим правильно поддерживать и
+          расширять код. Предоставляйте контекст для сложных алгоритмов, необычных подходов или ключевых ограничений.
         </p>
       </li>
 
       <li id="use-proper-comment-style">
         <p>
-          <strong>Use proper comment style</strong>: Write comments as
-          complete sentences with correct punctuation and grammar. Clear,
-          professional comments improve readability and show attention to
-          detail. They help create a cleaner, more maintainable codebase.
+          <strong>Используйте правильный стиль комментариев</strong>: Пишите комментарии в виде полных предложений с
+          правильной пунктуацией и грамматикой. Четкие и профессиональные комментарии улучшают читаемость и
+          демонстрируют внимание к деталям. Они помогают создавать более чистую и поддерживаемую кодовую базу.
         </p>
       </li>
     </ul>
 
-    <h4 id="code-organization">Organize things</h4>
-
+    <h4 id="code-organization">Организуйте код</h4>
     <p>
-      Organizing code well makes it easy to navigate, maintain, and extend. A
-      logical structure reduces cognitive load, letting developers focus on
-      solving problems instead of figuring out the code. Group related
-      elements, and simplify interfaces to keep the codebase clean, scalable,
-      and manageable as complexity grows.
+      Хорошая организация кода облегчает его навигацию, поддержку и расширение. Логичная структура снижает когнитивную
+      нагрузку, позволяя разработчикам сосредотачиваться на решении задач, а не на понимании кода. Группируйте связанные
+      элементы и упрощайте интерфейсы, чтобы кодовая база оставалась чистой, масштабируемой и управляемой с ростом
+      сложности.
     </p>
 
     <ul>
       <li id="organize-code-logically">
         <p>
-          <strong>Organize code logically</strong>: Structure your code
-          logically. Group related functions and classes together. Order code
-          naturally, placing high-level abstractions before low-level details.
-          Logical organization makes code easier to navigate and understand.
+          <strong>Организуйте код логично</strong>: Структурируйте код логически. Группируйте связанные функции и классы
+          вместе. Располагайте код в естественном порядке, начиная с высокоуровневых абстракций перед деталями низкого
+          уровня. Логичная организация облегчает навигацию и понимание кода.
         </p>
       </li>
+
       <li id="simplify-function-signatures">
         <p>
-          <strong>Simplify function signatures</strong>: Keep function
-          interfaces simple. Limit parameters, and prefer returning simple
-          types. Simple interfaces reduce cognitive load, making functions
-          easier to understand and use correctly.
+          <strong>Упрощайте сигнатуры функций</strong>: Держите интерфейсы функций простыми. Ограничивайте количество
+          параметров и предпочитайте возвращать простые типы. Простые интерфейсы снижают когнитивную нагрузку, упрощая
+          понимание и правильное использование функций.
         </p>
       </li>
 
       <li id="construct-objects-in-place">
         <p>
-          <strong>Construct objects in-place</strong>: Initialize large
-          structures or objects directly where they are declared. In-place
-          construction avoids unnecessary copying or moving of data, improving
-          performance and reducing the potential for lifecycle errors.
+          <strong>Создавайте объекты на месте</strong>: Инициализируйте большие структуры или объекты непосредственно
+          там, где они объявляются. Создание объектов на месте предотвращает ненужное копирование или перемещение
+          данных, улучшая производительность и снижая вероятность ошибок жизненного цикла.
         </p>
       </li>
 
       <li id="minimize-variable-scope">
         <p>
-          <strong>Minimize variable scope</strong>: Declare variables close to
-          their usage and within the smallest necessary scope. This reduces
-          the risk of misuse and makes code easier to read and maintain.
+          <strong>Минимизируйте область видимости переменных</strong>: Объявляйте переменные близко к месту их
+          использования и в минимально необходимой области видимости. Это снижает риск неправильного использования и
+          облегчает чтение и поддержку кода.
         </p>
       </li>
     </ul>
 
-    <h4 id="ensure-consistency">Ensure consistency</h4>
-
+    <h4 id="ensure-consistency">Обеспечьте консистентность</h4>
     <p>
-      Maintaining consistency in your code helps reduce errors and creates a
-      stable foundation for the rest of the system.
+      Поддержание консистентности в коде помогает снизить количество ошибок и создает стабильную основу для всей
+      системы.
     </p>
 
     <ul>
       <li id="avoid-duplicates-and-aliases">
         <p>
-          <strong>Avoid duplicates and aliases</strong>: Prevent
-          inconsistencies by avoiding duplicated variables or unnecessary
-          aliases. When two variables represent the same data, there's a
-          higher chance they fall out of sync. Use references or pointers to
-          maintain a single source of truth.
+          <strong>Избегайте дублирования и псевдонимов</strong>: Предотвращайте несоответствия, избегая дублированных
+          переменных или ненужных псевдонимов. Когда две переменные представляют одни и те же данные, увеличивается
+          вероятность их рассогласования. Используйте ссылки или указатели, чтобы поддерживать единственный источник
+          истины.
         </p>
       </li>
 
       <li id="pass-large-objects-by-reference">
         <p>
-          <strong>Pass large objects by reference</strong>: If a function's
-          argument is larger than 16 bytes, pass it as a reference instead of
-          by value to avoid unnecessary copying. This can catch bugs early
-          where unintended copies may occur.
+          <strong>Передавайте большие объекты по ссылке</strong>: Если аргумент функции больше 16 байт, передавайте его
+          по ссылке вместо передачи по значению, чтобы избежать ненужного копирования. Это позволяет рано выявлять
+          ошибки, связанные с непреднамеренным копированием.
         </p>
       </li>
 
       <li id="minimize-dimensionality">
         <p>
-          <strong>Minimize dimensionality</strong>: Keep function signatures
-          and return types simple to reduce the number of cases a developer
-          has to handle. For example, prefer <code>void</code> over
-          <code>bool</code>, <code>bool</code> over <code>u64</code>, and so
-          on, when it suits the function's purpose.
+          <strong>Минимизируйте размерность</strong>: Сохраняйте сигнатуры функций и возвращаемые типы простыми, чтобы
+          уменьшить количество случаев, которые разработчику нужно обработать. Например, предпочитайте <code>void</code>
+          вместо <code>bool</code>, <code>bool</code> вместо <code>u64</code> и так далее, если это соответствует цели
+          функции.
         </p>
       </li>
 
       <li id="handle-buffer-allocation-cleanly">
         <p>
-          <strong>Handle buffer allocation cleanly</strong>: When working with
-          buffers, allocate them close to where they are used and ensure all
-          corresponding cleanup happens in the same logical block. Group
-          resource allocation and deallocation with clear newlines to make
-          leaks easier to identify.
+          <strong>Аккуратно управляйте выделением буферов</strong>: При работе с буферами выделяйте их близко к месту
+          использования и обеспечивайте выполнение всех связанных очисток в одном логическом блоке. Группируйте
+          выделение и освобождение ресурсов с четким разделением, чтобы было проще выявить утечки.
         </p>
       </li>
     </ul>
 
-    <h4 id="avoid-off-by-one-errors">Avoid off-by-one errors</h4>
-
+    <h4 id="avoid-off-by-one-errors">Избегайте ошибок на единицу</h4>
     <p>
-      Off-by-one errors often result from casual interactions between an
-      <code>index</code>, a <code>count</code>, or a <code>size</code>. Treat
-      these as distinct types, and apply clear rules when converting between
-      them.
+      Ошибки на единицу часто возникают из-за случайных взаимодействий между <code>index</code>, <code>count</code> или
+      <code>size</code>. Рассматривайте их как отдельные типы и применяйте четкие правила при преобразовании между ними.
     </p>
 
     <ul>
       <li id="indexes-counts-sizes">
         <p>
-          <strong>Indexes, counts, and sizes</strong>: Indexes are 0-based,
-          counts are 1-based, and sizes represent total memory usage. When
-          converting between them, add or multiply accordingly. Use meaningful
-          <a href="#include-units-or-qualifiers-in-names">names with units or qualifiers</a>
-          to avoid confusion. See
+          <strong>Индексы, количества и размеры</strong>: Индексы начинаются с 0, количества — с 1, а размеры
+          представляют общий объем памяти. При преобразовании между ними добавляйте или умножайте соответствующим
+          образом. Используйте значимые <a href="#include-units-or-qualifiers-in-names">названия с единицами измерения
+            или уточнениями</a>, чтобы избежать путаницы.
         </p>
       </li>
 
       <li id="handle-division-intentionally">
         <p>
-          <strong>Handle division intentionally</strong>: When dividing, make
-          your intent clear by specifying how rounding should be handled in
-          edge cases. Use functions or operators designed for exact division,
-          floor division, or ceiling division. This avoids ambiguity and
-          ensures the result behaves as expected.
+          <strong>Обрабатывайте деление осознанно</strong>: При делении четко указывайте намерение, уточняя, как следует
+          обрабатывать округление в пограничных случаях. Используйте функции или операторы, предназначенные для точного
+          деления, деления вниз или вверх. Это устраняет двусмысленность и обеспечивает предсказуемое поведение
+          результата.
         </p>
       </li>
     </ul>
 
-    <h4 id="code-consistency-and-tooling">Code consistency and tooling</h4>
-
+    <h4 id="code-consistency-and-tooling">Кодовая консистентность и инструменты</h4>
     <p>
-      Consistency in code style and tools improves readability, reduces mental
-      load, and makes working together easier.
+      Консистентность в стиле кода и инструментах улучшает читаемость, снижает умственную нагрузку и упрощает совместную
+      работу.
     </p>
 
     <ul>
       <li id="maintain-consistent-indentation">
         <p>
-          <strong>Maintain consistent indentation</strong>: Use a uniform
-          indentation style across the codebase. For example, using 4 spaces
-          for indentation provides better visual clarity, especially in
-          complex structures.
+          <strong>Поддерживайте консистентный отступ</strong>: Используйте единый стиль отступов по всей кодовой базе.
+          Например, использование 4 пробелов для отступов обеспечивает лучшую визуальную четкость, особенно в сложных
+          структурах.
         </p>
       </li>
 
       <li id="limit-line-lengths">
         <p>
-          <strong>Limit line lengths</strong>: Keep lines within a reasonable
-          length (e.g., 100 characters) to ensure readability. This prevents
-          horizontal scrolling and helps maintain an accessible code layout.
+          <strong>Ограничивайте длину строк</strong>: Держите строки в пределах разумной длины (например, 100 символов),
+          чтобы обеспечить читаемость. Это предотвращает горизонтальную прокрутку и помогает поддерживать доступный
+          макет кода.
         </p>
       </li>
 
       <li id="use-clear-code-blocks">
         <p>
-          <strong>Use clear code blocks</strong>: Structure code clearly by
-          separating blocks (e.g., control structures, loops, function
-          definitions) to make it easy to follow. Avoid placing multiple
-          statements on a single line, even if allowed. Consistent block
-          structures prevent subtle logic errors and make code easier to
-          maintain.
+          <strong>Используйте четкие блоки кода</strong>: Структурируйте код, четко разделяя блоки (например,
+          управляющие структуры, циклы, определения функций), чтобы их было легко понять. Избегайте размещения
+          нескольких операторов в одной строке, даже если это разрешено. Последовательные структуры блоков предотвращают
+          тонкие логические ошибки и упрощают поддержку кода.
         </p>
       </li>
 
       <li id="minimize-external-dependencies">
         <p>
-          <strong>Minimize external dependencies</strong>: Reducing external
-          dependencies simplifies the build process and improves security
-          management. Fewer dependencies lower the risk of supply chain
-          attacks, minimize performance issues, and speed up installation.
+          <strong>Минимизируйте внешние зависимости</strong>: Снижение количества внешних зависимостей упрощает процесс
+          сборки и улучшает управление безопасностью. Меньшее количество зависимостей снижает риск атак на цепочку
+          поставок, минимизирует проблемы с производительностью и ускоряет установку.
         </p>
       </li>
 
       <li id="standardize-tooling">
         <p>
-          <strong>Standardize tooling</strong>: Using a small, standardized
-          set of tools simplifies the development environment and reduces
-          accidental complexity. Choose cross-platform tools where possible to
-          avoid platform-specific issues and improve portability across
-          systems.
+          <strong>Стандартизируйте инструменты</strong>: Использование небольшого стандартизированного набора
+          инструментов упрощает среду разработки и снижает случайную сложность. Выбирайте кроссплатформенные
+          инструменты, где это возможно, чтобы избежать проблем, специфичных для платформ, и улучшить переносимость
+          между системами.
         </p>
       </li>
     </ul>
