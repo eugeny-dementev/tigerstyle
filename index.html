@@ -575,116 +575,116 @@
     <hr class="section-divider" />
 
     <section id="addendum">
-      <h2>Addendum</h2>
+      <h2>Приложение</h2>
 
-      <h3 id="addendum-zero-technical-debt">Addendum: Zero technical debt</h3>
+      <h3 id="addendum-zero-technical-debt">Приложение: Нулевой технический долг</h3>
 
       <p>
-        While Tiger Style focuses on the core principles of safety,
-        performance, and developer experience, these are reinforced by an
-        underlying commitment to zero technical debt.
+        Хотя Tiger Style сосредоточен на основных принципах безопасности,
+        производительности и опыта разработчика, они подкрепляются
+        фундаментальной приверженностью отсутствию технического долга.
       </p>
 
       <p>
-        A <strong>zero technical debt policy</strong> is key to maintaining a
-        healthy codebase and ensuring long-term productivity. Addressing
-        potential issues proactively and building robust solutions from the
-        start helps avoid debt that would slow future development.
+        <strong>Политика нулевого технического долга</strong> является ключом к
+        поддержанию здоровой кодовой базы и обеспечению долгосрочной
+        продуктивности. Проактивное устранение потенциальных проблем и
+        создание надежных решений с самого начала помогает избежать долга,
+        который замедлит будущее развитие.
       </p>
 
       <ul>
         <li id="do-it-right-the-first-time">
           <p>
-            <strong>Do it right the first time</strong>: Take the time to
-            design and implement solutions correctly from the start. Rushed
-            features lead to technical debt that requires costly refactoring
-            later.
+            <strong>Сделайте правильно с первого раза</strong>: Уделите время
+            проектированию и реализации решений правильно с самого начала.
+            Поспешные решения создают технический долг, который потребует
+            дорогостоящего рефакторинга в будущем.
           </p>
         </li>
 
         <li id="be-proactive-in-problem-solving">
           <p>
-            <strong>Be proactive in problem-solving</strong>: Anticipate
-            potential issues and fix them before they escalate. Early
-            detection saves time and resources, preventing performance
-            bottlenecks and architectural flaws.
+            <strong>Будьте проактивны в решении проблем</strong>: Предвидьте
+            потенциальные проблемы и устраняйте их до того, как они обострятся.
+            Раннее обнаружение экономит время и ресурсы, предотвращая узкие
+            места производительности и архитектурные недостатки.
           </p>
         </li>
 
         <li id="build-momentum">
           <p>
-            <strong>Build momentum</strong>: Delivering solid, reliable code
-            builds confidence and enables faster development cycles.
-            High-quality work supports innovation and reduces the need for
-            future rewrites.
+            <strong>Наращивайте импульс</strong>: Поставка надежного, качественного
+            кода укрепляет уверенность и позволяет быстрее завершать циклы
+            разработки. Высокое качество работы поддерживает инновации и
+            снижает необходимость будущих переписок.
           </p>
         </li>
       </ul>
 
       <p>
-        Avoiding technical debt ensures that progress is true progress—solid,
-        reliable, and built to last.
+        Избегание технического долга обеспечивает, что прогресс — это истинный
+        прогресс: надежный, устойчивый и рассчитанный на долгосрочную перспективу.
       </p>
 
-      <h3 id="addendum-performance-estimation">
-        Addendum: Performance estimation
-      </h3>
+      <h3 id="addendum-performance-estimation">Приложение: Оценка производительности</h3>
 
       <p>
-        You should think about performance early in design. Napkin math is a
-        helpful tool for this.
+        Следует задуматься о производительности на раннем этапе проектирования.
+        «Математика на салфетке» — полезный инструмент для этого.
       </p>
 
       <p>
-        Napkin math uses simple calculations and rounded numbers to quickly
-        estimate system performance and resource needs.
+        «Математика на салфетке» использует простые вычисления и округленные
+        числа для быстрой оценки производительности системы и потребностей в
+        ресурсах.
       </p>
 
       <ul>
         <li>
-          <strong>Quick insights</strong>: Understand system behavior fast
-          without deep analysis.
+          <strong>Быстрое понимание</strong>: Быстро понять поведение системы без
+          глубокого анализа.
         </li>
         <li>
-          <strong>Early decisions</strong>: Find potential bottlenecks early
-          in design.
+          <strong>Ранние решения</strong>: Обнаружить потенциальные узкие места
+          на этапе проектирования.
         </li>
         <li>
-          <strong>Sanity checks</strong>: See if an idea works before you
-          build it.
+          <strong>Проверка здравого смысла</strong>: Понять, работает ли идея, до
+          её реализации.
         </li>
       </ul>
 
       <p>
-        For example, if you're designing a system to store logs, you can
-        estimate storage costs like this:
+        Например, если вы проектируете систему для хранения логов, можно оценить
+        затраты на хранение следующим образом:
       </p>
 
       <pre>
         <code>
-          1. <strong>Estimate log volume</strong>:
-          Assume 1,000 requests per second (RPS)
-          Each log entry is about 1 KB
+          1. <strong>Оцените объем логов</strong>:
+          Предположим 1000 запросов в секунду (RPS)
+          Каждая запись лога около 1 КБ
 
-          2. <strong>Calculate daily log volume</strong>:
-          1,000 RPS * 86,400 seconds/day * 1 KB ≈ 86,400,000 KB/day ≈ 86.4 GB/day
+          2. <strong>Рассчитайте дневной объем логов</strong>:
+          1000 RPS * 86 400 секунд/день * 1 КБ ≈ 86 400 000 КБ/день ≈ 86,4 ГБ/день
 
-          3. <strong>Estimate monthly storage</strong>:
-          86.4 GB/day * 30 days ≈ 2,592 GB/month
+          3. <strong>Оцените месячное хранилище</strong>:
+          86,4 ГБ/день * 30 дней ≈ 2 592 ГБ/месяц
 
-          4. <strong>Estimate cost (using $0.02 per GB for blob storage)</strong>:
-          2,592 GB * 1000 GB/TB * $0.02/GB ≈ $51 per month</code>
+          4. <strong>Оцените стоимость ($0,02 за ГБ хранения)</strong>:
+          2592 ГБ * 1000 ГБ/ТБ * $0,02/ГБ ≈ $51 в месяц</code>
       </pre>
 
       <p>
-        This gives you a rough idea of monthly storage costs. It helps you
-        check if your logging plan works. The idea is to get within 10x of the
-        right answer.
+        Это дает вам примерное представление о месячных затратах на хранение.
+        Это помогает проверить, работает ли ваш план ведения логов. Идея
+        заключается в том, чтобы быть на расстоянии 10x от правильного ответа.
       </p>
 
       <p>
-        For more, see
-        <a href="https://github.com/sirupsen/napkin-math">Simon Eskildsen's napkin math project</a>.
+        Подробнее см. в
+        <a href="https://github.com/sirupsen/napkin-math">проекте "Математика на салфетке" Саймона Эскилдсена</a>.
       </p>
     </section>
 
@@ -694,7 +694,7 @@
       <h2>Colophon</h2>
 
       <p>
-        Этот текст это вольный перевод
+        Данный текст является вольным переводом
         <a href="https://tigerstyle.dev">https://tigerstyle.dev</a>,
         который в свою очередь основан на идеях оригинального гайда
         <a href="https://github.com/tigerbeetle/tigerbeetle/blob/main/docs/TIGER_STYLE.md" target="_blank">
